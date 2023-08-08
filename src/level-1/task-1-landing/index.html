@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlindReaper | A blind XSS analysis tool</title>
+
+  <link rel="stylesheet" href="../../common/output.css" />
+  <link rel="stylesheet" href="../../common/common.css" />
+</head>
+
+<body class="w-full h-full font-roboto bg-zinc-100">
+  <header>
+    <nav class="">
+      <div class="flex">
+        <div>
+          <h1 class="font-inter font-extrabold p-3 py-3 text-xl">BlindReaper</h1>
+        </div>
+        <!-- navigation -->
+        <div class="ml-auto flex flex-row items-center gap-6 text-sm text-slate-900 px-3">
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Contact</a>
+          <a href="#">Log In</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- hero -->
+    <div class="py-32 flex flex-col items-center">
+      <h1 class="font-inter text-center font-extrabold text-6xl md:text-7xl">BlindReaper</h1>
+      <h4 class="text-center pt-4 pb-2 text-slate-900">Reaping the souls out of blind XSS vulnerable websites.</h4>
+
+      <div class="flex gap-2">
+        <button class="hover:shadow-md p-2 rounded-md bg-black text-white px-4">Subscribe</button>
+        <button class="hover:shadow-md p-2 rounded-md border-black border-2 bg-gray-100 text-black px-4">Log In</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 md:p-4">
+      <div class="p-6 py-12">
+        <h1 class="font-montserrat text-slate-900 font-bold text-4xl">Detect and capture blind XSS attacks</h1>
+        <p class="pt-6 text-slate-700 font-light">BlindReaper provides a simple and intuitive user interface to manage
+          your blind XSS targets and payloads. It also provides API to interact with the system, allowing third-party
+          clients.</p>
+      </div>
+      <div class="p-6 py-12">
+        <h1 class="font-montserrat text-slate-900 font-bold text-4xl">Manage multiple payloads simultaneously</h1>
+        <p class="pt-6 text-slate-700 font-light">BlindReaper is capable of managing multiple payloads at the same time,
+          without interference. This simplifies the workflow and allows to manage threats from multiple domains, and
+          separate concerns.</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="grid grid-cols-1 md:p-4">
+      <div class="p-6 py-12 grid grid-cols-2 gap-2">
+        <div class="self-center">
+          <h1 class="font-montserrat text-slate-900 font-bold text-4xl">Preview</h1>
+          <p class="pt-6 text-slate-700 font-light">BlindReaper is capable of managing multiple payloads at the same
+            time,
+            without interference. This simplifies the workflow and allows to manage threats from multiple domains, and
+            separate concerns.</p>
+        </div>
+        <img class="self-center" src="./assets/blindreaper-payloads.png" />
+      </div>
+    </div>
+
+    <footer class="p-4 px-6 bg-black text-white flex w-full justify-center pb-10">
+      <div class="flex gap-12 w-full max-w-xl">
+        <div>
+          <h1 class="text-slate-50 font-semibold font-open-sans text-lg py-2">Navigation</h1>
+          <div class="flex flex-col text-sm text-slate-300 font-light gap-1 pt-2">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-slate-50 font-semibold font-open-sans text-lg py-2">Social Links</h1>
+          <div class="flex flex-col text-sm text-slate-300 font-light pt-2 gap-1">
+            <a href="#">Website</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+        <div class="flex flex-1 text-xs font-light items-end justify-end text-slate-300">
+          <p class="">
+            Crafted with &hearts; by Atmanand Nagpure.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

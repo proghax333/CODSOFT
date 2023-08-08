@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atmanand Nagpure</title>
+
+  <link rel="stylesheet" href="../../common/common.css" />
+  <link rel="stylesheet" href="../../common/output.css" />
+
+  <script defer src="./assets/index.js"></script>
+</head>
+
+<body class="w-full h-full font-roboto bg-[#111] text-slate-50">
+  <main class="min-h-screen flex flex-col w-full justify-center">
+    <div class="flex flex-col items-center overflow-hidden">
+      <!-- calculator ui -->
+      <div class="w-full max-w-[22rem] rounded-lg bg-black">
+        <!-- header -->
+        <div class=" bg-neutral-800 text-white rounded-t-md p-1">
+          <p class="text-xs px-2 font-bold text-slate-100">Calculator</p>
+        </div>
+        <!-- calculator main ui -->
+        <div class="calculator-container select-none grid grid-cols-4 p-3 gap-y-4 gap-x-3 text-3xl">
+          <input name="input-display"
+            value="0" 
+            class="input-display select-auto col-span-4 h-32 font-light text-right text-[5.5rem] pt-24 pb-12 text-white outline-none bg-transparent fill-none" />
+
+          <button class="justify-self-center bg-neutral-400 w-[4.75rem] h-[4.75rem] rounded-full text-black" data-action="cut">C</button>
+          <!-- <button class="justify-self-center bg-neutral-400 w-[4.75rem] h-[4.75rem] rounded-full text-black" data-action="plus-minus">&#xb1;</button> -->
+          <button class="justify-self-center bg-neutral-400 w-[4.75rem] h-[4.75rem] rounded-full text-black" data-action="all-clear">AC</button>
+          <button class="justify-self-center bg-neutral-400 w-[4.75rem] h-[4.75rem] rounded-full text-black" data-action="percent">%</button>
+          <button class="justify-self-center bg-orange-500 w-[4.75rem] h-[4.75rem] rounded-full text-white" data-action="divide">&#xF7;</button>
+
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="7">7</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="8">8</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="9">9</button>
+          <button class="justify-self-center bg-orange-500 w-[4.75rem] h-[4.75rem] rounded-full text-white" data-action="multiply">&times;</button>
+
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="4">4</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="5">5</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="6">6</button>
+          <button class="justify-self-center bg-orange-500 w-[4.75rem] h-[4.75rem] rounded-full text-white" data-action="subtract">&minus;</button>
+
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="1">1</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="2">2</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="3">3</button>
+          <button class="justify-self-center bg-orange-500 w-[4.75rem] h-[4.75rem] rounded-full text-white" data-action="add">&plus;</button>
+
+          <button class="justify-self-center bg-neutral-700 w-[10rem] h-[4.75rem] rounded-full col-span-2" data-action="0">0</button>
+          <button class="justify-self-center bg-neutral-700 w-[4.75rem] h-[4.75rem] rounded-full" data-action="decimal">.</button>
+          <button class="justify-self-center bg-orange-500 w-[4.75rem] h-[4.75rem] rounded-full text-white" data-action="equals">&equals;</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
